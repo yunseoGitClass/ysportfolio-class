@@ -10,5 +10,6 @@ This project is a personal portfolio website.
 ## Project Status
 **Version:** 1.0
 **Status:** Released
+**Status:** In Development
 ## Author
 Created for Software Engineering practice
