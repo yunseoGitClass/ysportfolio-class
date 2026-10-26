@@ -61,47 +61,62 @@
         <p class="section-note">아이디어에서 배포까지,<br>사용자에게 닿는 모든 순간을 설계합니다.</p>
       </div>
       <div class="project-grid">
-        <article class="project-card project-violet">
+        <article class="project-card project-violet" tabindex="0" role="button" aria-haspopup="dialog" aria-controls="project-dialog" data-project="lumio">
           <div class="project-top">
             <span class="project-number">01 / 03</span>
             <span class="project-type">BRAND EXPERIENCE</span>
           </div>
           <div class="project-art art-orbit"><span>n</span><i></i><b></b></div>
           <div class="project-info">
-            <h3>noto studio</h3>
+            <h3>Lumio</h3>
             <p>브랜드의 결을 담은 크리에이티브 스튜디오 웹사이트</p>
             <div class="tag-list"><span>Next.js</span><span>GSAP</span><span>Web Design</span></div>
           </div>
-          <a class="project-link" href="#contact" aria-label="noto studio 프로젝트 문의">↗</a>
+          <span class="project-link" aria-hidden="true">↗</span>
         </article>
-        <article class="project-card project-yellow">
+        <article class="project-card project-yellow" tabindex="0" role="button" aria-haspopup="dialog" aria-controls="project-dialog" data-project="mori">
           <div class="project-top">
             <span class="project-number">02 / 03</span>
             <span class="project-type">MOBILE PRODUCT</span>
           </div>
           <div class="project-art art-spark"><span>✦</span><i>daily<br>pause</i></div>
           <div class="project-info">
-            <h3>daily pause</h3>
+            <h3>Mori</h3>
             <p>매일의 작은 휴식들을 기록하는 웰니스 앱</p>
             <div class="tag-list"><span>React Native</span><span>Product Design</span></div>
           </div>
-          <a class="project-link" href="#contact" aria-label="daily pause 프로젝트 문의">↗</a>
+          <span class="project-link" aria-hidden="true">↗</span>
         </article>
-        <article class="project-card project-blue">
+        <article class="project-card project-blue" tabindex="0" role="button" aria-haspopup="dialog" aria-controls="project-dialog" data-project="ondoStudio">
           <div class="project-top">
             <span class="project-number">03 / 03</span>
             <span class="project-type">E-COMMERCE</span>
           </div>
           <div class="project-art art-wave"><span>HOME<br>OBJECTS</span><i></i></div>
           <div class="project-info">
-            <h3>form &amp; function</h3>
+            <h3>OndoStudio</h3>
             <p>오래 쓰고 싶은 물건을 소개하는 온라인 스토어</p>
             <div class="tag-list"><span>JavaScript</span><span>Shopify</span><span>UX</span></div>
           </div>
-          <a class="project-link" href="#contact" aria-label="form and function 프로젝트 문의">↗</a>
+          <span class="project-link" aria-hidden="true">↗</span>
         </article>
       </div>
     </section>
+
+    <dialog class="project-dialog" id="project-dialog" aria-labelledby="project-dialog-title">
+      <div class="dialog-heading">
+        <p class="eyebrow">PROJECT DETAILS</p>
+        <button class="dialog-close" type="button" aria-label="상세 정보 닫기">×</button>
+      </div>
+      <h2 id="project-dialog-title"></h2>
+      <p class="example-notice">아래 상세 정보와 성과는 이해를 돕기 위해 작성한 예시입니다.</p>
+      <dl class="project-details">
+        <div><dt>프로젝트 설명</dt><dd id="project-description"></dd></div>
+        <div><dt>담당 역할</dt><dd id="project-role"></dd></div>
+        <div><dt>사용 기술</dt><dd id="project-technologies"></dd></div>
+        <div><dt>주요 성과</dt><dd id="project-results"></dd></div>
+      </dl>
+    </dialog>
 
     <section class="contact-section container" id="contact">
       <div class="contact-copy">
